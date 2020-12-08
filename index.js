@@ -5,7 +5,8 @@ var app = new Vue({
   },
   methods: {
     changeMessage: function () {
-      this.message = this.message.split('').reverse().join('')
+      console.log('changing message...');
+      this.message = "Good Job!";
     }
   }
 })
