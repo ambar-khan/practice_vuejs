@@ -17,6 +17,25 @@
     <!-- v-if -->
     <p v-if="showInfo">Here is some interesting information</p>
     <button v-on:click="toggleInfo()">Toggle the info</button>
+
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- {{ fruits }} -->
+
+    <p>Enter a new fruit here: <input type="text" v-model="newFruit"> <button v-on:click="addFruit()">Add Fruit</button></p>
+
+    <div v-for="fruit in fruits">
+      <p>{{ fruit }}</p>
+    </div>
     </div>
   </body>
 </html>

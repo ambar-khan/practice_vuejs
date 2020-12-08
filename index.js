@@ -2,7 +2,9 @@ var app = new Vue({
   el: '#app',
   data: {
     message: 'Holiday Recipe Ingredients!',
-    showInfo: true
+    showInfo: true,
+    fruits: ['raspberry', 'apple', 'banana', 'kiwi'],
+    newFruit: ""
   },
   methods: {
     changeMessage: function () {
@@ -16,6 +18,13 @@ var app = new Vue({
       } else {
         this.showInfo = true;
       }
+    },
+    addFruit: function () {
+      console.log('adding fruit...');
+      console.log(this.newFruit);
+      // how can i add newFruit to the array?
+      this.fruits.push(this.newFruit);
+      this.newFruit = "";
     }
   }
 });
