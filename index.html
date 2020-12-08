@@ -12,6 +12,11 @@
       <p>{{ message }}</p>
       <input v-model="message">
       <button v-on:click="changeMessage()">Click Me</button>
+      <hr>
+
+    <!-- v-if -->
+    <p v-if="showInfo">Here is some interesting information</p>
+    <button v-on:click="toggleInfo()">Toggle the info</button>
     </div>
   </body>
 </html>
