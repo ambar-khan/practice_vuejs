@@ -5,6 +5,7 @@
     <title>Practice Vue.js</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="index.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <h1>Grocery List</h1>
@@ -35,6 +36,7 @@
 
     <div v-for="fruit in fruits">
       <p>{{ fruit }}</p>
+      {{ todos }}
     </div>
     </div>
   </body>
